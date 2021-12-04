@@ -17,4 +17,8 @@ In order to answer this question we needed lots of song lyrics with a genre asso
 | Pop  | Content Cell  |
 
 
-In order to make the data useable we had to do some cleaning 
+In order to make the data useable we had to do some cleaning and preprocessing. The first thing we did was remove formating, punctuation, and a tag that was included at the end of each song. Next we removed stop words and lematized the words. Lematizing takes words like start started starting and converts them into the base word, in this case start. Next we tokenized the lyrics so they would be in a format that is useable. We had two methods for doing this. The first method was to count vectorize each word. That created a dataframe in which each row was a song and each column was a word in the dataframe with a count of how many times that word appeared in the song.
+
+The second mehtod used a Tf-idf score. This produces something similar to the first method but instead of a count is now gives each word a weight based on the words frequency in other documents.
+
+Both methods were explored while creating the model. 
