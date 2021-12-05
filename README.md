@@ -22,3 +22,62 @@ In order to make the data useable we had to do some cleaning and preprocessing. 
 The second mehtod used a Tf-idf score. This produces something similar to the first method but instead of a count is now gives each word a weight based on the words frequency in other documents.
 
 Both methods were explored while creating the model. 
+
+
+## EDA
+
+The follwing tables show five most common words for each genre, excluding words that don't carry a lot of meaning.
+
+<table>
+<tr><th>Country </th><th>Pop</th><th>Rock</th><th>Rhythm and Blues</th><th>Rap</th></tr>
+<tr><td>
+
+| Word  | Counts |
+| ------------- | ------------- |
+| Love  | 3,716  |
+| Baby  | 2,798  |
+| Time  | 2,645  |
+| Girl  | 2,455  |
+| Unknown  | 1,000  |
+  
+</td><td>  
+
+| Wod  | Counts |
+| ------------- | ------------- |
+| Love  | 4,324  |
+| Baby  | 2,482  |
+| Want  | 1,845  |
+| Wanna  | 1,702  |
+| Say  | 1,659  |
+  
+</td><td> 
+
+| Word  | Counts |
+| ------------- | ------------- |
+| Love  | 4,927  |
+| Time  | 3,124  |
+| Come  | 2,877  |
+| Unknown  | 1,000  |
+| Want  | 2,522  |
+
+</td><td>
+
+| Word  | Counts |
+| ------------- | ------------- |
+| Love  | 11,976  |
+| Baby  | 7,442  |
+| Time  | 3,539  |
+| Want  | 3,332  |
+| Come  | 3,225  |
+
+</td><td>
+
+| Word  | Counts |
+| ------------- | ------------- |
+| N****  | 17,797  |
+| B****  | 11,546  |
+| F***  | 7,819  |
+| S***  | 7,487  |
+| Love  | 4,592  |
+
+</td></tr> </table> 
