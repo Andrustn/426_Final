@@ -27,7 +27,7 @@ Both methods were explored while creating the model.
 
 ## EDA
 
-The follwing tables show five most common words for each genre, excluding words that don't carry a lot of meaning.
+The follwing tables show the five most common words for each genre, excluding words that don't carry a lot of meaning.
 
 <table>
 <tr><th>Country </th><th>Pop</th><th>Rock</th><th>Rhythm and Blues</th><th>Rap</th></tr>
