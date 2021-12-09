@@ -87,7 +87,7 @@ The follwing tables show the five most common words for each genre, excluding wo
 
 When it came to choosing a model we looked at 12 different models and split the data into a train and test set. The following graph shows how each of the models performed when trying to predict on the test set.
 
-![ModelPerformance](Model-Performance-Graph.JPG)
+![ModelPerformance](Images/Model-Performance-Graph.JPG)
 
 The logistic regression model performed the best but we decided to use the random forest model. The reasoning behind this decision is that much of the interpretability associated with a logistic regression model is lost once you have more than two classes and it gets even worse once you have a lot of predictors, and although random forest models aren't particullary intrepretable they do allow us to look at which variables are the most important. Below is the list of words we found most important:
 
@@ -106,13 +106,13 @@ The logistic regression model performed the best but we decided to use the rando
 
 When it comes to seeing which genres are easiest to predict, it is most helpful to look at a confusion matrix. The confusion matrix below shows the percentage of the genre predicted in each class.
 
-![ConfusionMatrix](Confusion-Matrix.JPG)
+![ConfusionMatrix](Images/Confusion-Matrix.JPG)
 
 The genre that was predicted with the greatest accuaracy was rap. However our model did especially poor at predicting pop. Pop was most often mistaken for rhthym and blues and rock music.
 
 When we turned to unsupervised method to determine how many genre there should be a kmeans clustering algorithm didn't produce a clear answer as can be seen below.
 
-![Clustering](Num-Of-Clusters.JPG)
+![Clustering](Images/Num-Of-Clusters.JPG)
 
 When we tell the kmeans algorithm that there should be five groups it associated these words with each group
 
