@@ -130,7 +130,7 @@ When we tell the kmeans algorithm that there should be five groups it associated
 | 4  | love want baby heart need never feel say time wanna  |
 | 5  | la na ah da tell feel love song want  |
 
-With the exception of group 4 it is hard to distinguish which group belongs to which genre.
+With the exception of group 3 it is hard to distinguish which group belongs to which genre.
 
 ## Conclusion
 
