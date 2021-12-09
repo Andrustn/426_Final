@@ -39,7 +39,7 @@ The follwing tables show the five most common words for each genre, excluding wo
 | Baby  | 2,798  |
 | Time  | 2,645  |
 | Girl  | 2,455  |
-| Unknown  | 1,000  |
+| Little  | 2,181  |
   
 </td><td>  
 
@@ -58,8 +58,8 @@ The follwing tables show the five most common words for each genre, excluding wo
 | Love  | 4,927  |
 | Time  | 3,124  |
 | Come  | 2,877  |
-| Unknown  | 1,000  |
 | Want  | 2,522  |
+| See  | 2,501  |
 
 </td><td>
 
@@ -82,3 +82,39 @@ The follwing tables show the five most common words for each genre, excluding wo
 | Love  | 4,592  |
 
 </td></tr> </table> 
+
+## Methods and Results
+
+When it came to choosing a model we looked at 12 different models and split the data into a train and test set. The following graph shows how each of the models performed when trying to predict on the test set.
+
+
+The logistic regression model performed the best but we decided to use the random forest model. The reasoning behind this decision is that much of the interpretability associated with a logistic regression model is lost once you have more than two classes and it gets even worse once you have a lot of predictors, and although random forest models aren't particullary intrepretable they do allow us to look at which variables are the most important. Below is the list of words we found most important:
+
+| Rank Of Importance  | Word |
+| ------------- | ------------- |
+| 1  | nice |
+| 2  | frozen  |
+| 3  | birthday  |
+| 4  | ship  |
+| 5  | ba  |
+| 6  | louder  |
+| 7  | gold  |
+| 8  | wallet  |
+| 9  | electric  |
+| 10  | f***  |
+
+When it comes to seeing which geners are easiest to predict it is most helpful to look at a confusion matrix. The confusion matrix below shows the percentage of the genre predicted in each class.
+
+| Confusion Matrix  | Country | Pop | Rap | Rythem and Blues | Rock |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Country  | 0.61 | 0.00 | 0.02 | 0.10 | 0.20 | 
+| Pop | 0.08  | 0.04 | 0.04 | 0.18 | 0. 16 |
+| Rap  | 0.02  | 0.00 | 0.95 | 0.02 | 0.01 |
+| Rythem and Blues  | 0.04  | 0.03 | 0.08 | 0.52 | 0.25 |
+| Rock  | 0.10  | 0.01 | 0.01 | 0.15 | 0.80 |
+
+The genre that was predicted with the greatest accuaracy was Rap with 95% accuaracy. However our model did esspecially poor at predicting Pop with an accuracy of only 4%. Pop was most often mistaken for Rythem and Blues and Rock music.
+
+## Conclusion
+
+In conclusion it appears that songs can for the most part be seperated into genre just based on there lyics. However some genres are more similar that other genres. Some extra things that we could look at when trying to distriguish what genre music belongs to is length of song, key of the music, types of notes, and when the song was released. We believe that if we took some of these variables into account that we could get a much better accuaracy. 
