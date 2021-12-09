@@ -87,6 +87,7 @@ The follwing tables show the five most common words for each genre, excluding wo
 
 When it came to choosing a model we looked at 12 different models and split the data into a train and test set. The following graph shows how each of the models performed when trying to predict on the test set.
 
+![ModelPerformance](Model-Performance-Graph.JPG)
 
 The logistic regression model performed the best but we decided to use the random forest model. The reasoning behind this decision is that much of the interpretability associated with a logistic regression model is lost once you have more than two classes and it gets even worse once you have a lot of predictors, and although random forest models aren't particullary intrepretable they do allow us to look at which variables are the most important. Below is the list of words we found most important:
 
