@@ -116,6 +116,22 @@ When it comes to seeing which geners are easiest to predict it is most helpful t
 
 The genre that was predicted with the greatest accuaracy was Rap with 95% accuaracy. However our model did esspecially poor at predicting Pop with an accuracy of only 4%. Pop was most often mistaken for Rythem and Blues and Rock music.
 
+When we turned to unsupervised method to determine how many genre there should be a kmeans clustering algorithm didn't produce a clear answer as can be seen below.
+
+![Clustering](Num-Of-Clusters.JPG)
+
+When we tell the kmeans algorithm that there should be five groups it associated these words with each group
+
+| Group  | Words |
+| ------------- | ------------- |
+| 1  | time come night never see take girl right say make |
+| 2  | baby love come time want wanna need girl take say  |
+| 3  | n**** b**** f*** s*** ayy gon money em wanna huh  |
+| 4  | love want baby heart need never feel say time wanna  |
+| 5  | la na ah da tell feel love song want  |
+
+With the exception of group 4 it is hard to distinguish which group belongs to which genre.
+
 ## Conclusion
 
 In conclusion it appears that songs can for the most part be seperated into genre just based on there lyics. However some genres are more similar that other genres. Some extra things that we could look at when trying to distriguish what genre music belongs to is length of song, key of the music, types of notes, and when the song was released. We believe that if we took some of these variables into account that we could get a much better accuaracy. 
