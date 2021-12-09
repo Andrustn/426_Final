@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Music genre help listeners comb through an almost endless amount of music to find songs that they enjoy. There are lots of factors that go into deciding what genre a piece of music falls into. Some of these factors include rthyem, tempo, lyrics, and artist. Given this we were interested in seeing weather a song' genere can be identified by its lyrics alone. Also since genre is much more a fluid concept and some songs fall into multiple genres we want to see how many genere groups an unsupervised learning method think exists.
+Music genre help listeners comb through an almost endless amount of music to find songs that they enjoy. There are lots of factors that go into deciding what genre a piece of music falls into. Some of these factors include rthyem, tempo, lyrics, and artist. Given this, we were interested in seeing whether a song's genre can be identified by its lyrics alone. Also, since genre is a fluid concept and some songs fall into multiple genres, we want to see how many genre groups an unsupervised learning method think exists.
 
 ## Data Collection and Cleaning
 
-In order to answer this question we needed lots of song lyrics with a genre associated with each song. To do this we used [genius' api](https://docs.genius.com/) which contains a wide variety of song lyrics from almost every possible genre. Since there are so so many genres a even more sub genres we decided to choose five to see if our model could distriguish between just those five. The genres we selected were country, rock, rap, rhythm and blues, and pop. To select songs for these five genres we looked up the top 50 artists in each genre and pulled their top 50 songs, if they had that many. If an artist was in two different genres we threw them out all together. In the end the number of songs per each genre were
+In order to answer this question we needed lots of song lyrics with a genre associated with each song. To do this we used [genius' api](https://docs.genius.com/) which contains a wide variety of song lyrics from almost every possible genre. Since there are so many genres and even more sub-genres we decided to choose the five main genres according to Genius to see if our model could distinguish between just those five. The genres we selected were country, rock, rap, rhythm and blues, and pop. To select songs for these five genres we looked up the top artists in each genre and pulled their top 50 songs, if they had that many. If an artist was in two different genres we threw them out all together. In the end the number of songs per each genre were
 
 
 | Genre  | Counts |
@@ -104,17 +104,17 @@ The logistic regression model performed the best but we decided to use the rando
 | 9  | electric  |
 | 10  | f***  |
 
-When it comes to seeing which geners are easiest to predict it is most helpful to look at a confusion matrix. The confusion matrix below shows the percentage of the genre predicted in each class.
+When it comes to seeing which genres are easiest to predict, it is most helpful to look at a confusion matrix. The confusion matrix below shows the percentage of the genre predicted in each class.
 
 | Confusion Matrix  | Country | Pop | Rap | Rythem and Blues | Rock |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Country  | 0.61 | 0.00 | 0.02 | 0.10 | 0.20 | 
 | Pop | 0.08  | 0.04 | 0.04 | 0.18 | 0. 16 |
 | Rap  | 0.02  | 0.00 | 0.95 | 0.02 | 0.01 |
-| Rythem and Blues  | 0.04  | 0.03 | 0.08 | 0.52 | 0.25 |
+| Rhythm and Blues  | 0.04  | 0.03 | 0.08 | 0.52 | 0.25 |
 | Rock  | 0.10  | 0.01 | 0.01 | 0.15 | 0.80 |
 
-The genre that was predicted with the greatest accuaracy was Rap with 95% accuaracy. However our model did esspecially poor at predicting Pop with an accuracy of only 4%. Pop was most often mistaken for Rythem and Blues and Rock music.
+The genre that was predicted with the greatest accuaracy was rap with 95% accuaracy. However our model did especially poor at predicting pop with an accuracy of only 4%. Pop was most often mistaken for rhthym and blues and rock music.
 
 When we turned to unsupervised method to determine how many genre there should be a kmeans clustering algorithm didn't produce a clear answer as can be seen below.
 
@@ -134,4 +134,4 @@ With the exception of group 3 it is hard to distinguish which group belongs to w
 
 ## Conclusion
 
-In conclusion it appears that songs can for the most part be seperated into genre just based on there lyics. However some genres are more similar that other genres. Some extra things that we could look at when trying to distriguish what genre music belongs to is length of song, key of the music, types of notes, and when the song was released. We believe that if we took some of these variables into account that we could get a much better accuaracy. 
+In conclusion it appears that songs can, for the most, part be separated into genre just based on their lyrics. However, some genres are more similar that other genres. Some extra things that we could look at when trying to distinguish what genre music belongs to is length of song, number of words, key of the music, types of notes, and when the song was released. We believe that if we took some of these variables into account that we could get a much better accuaracy. 
