@@ -126,6 +126,14 @@ When we tell the kmeans algorithm that there should be five groups it associated
 
 With the exception of group 3 it is hard to distinguish which group belongs to which genre.
 
+## Limitations
+
+There were some limitations to our project. One of the main limitations was assigning artists to genres. The genius API was great for pulling songs from an artist but the method to pull songs from a genre tag was very limited; there would've been only around 1500 songs total and country would have only included about 20. So when we decided to scrape songs from the top artists in each genre it created some concern. Some artists are in different genres and some songs might be considered one genre and some songs a different genre. But when we pulled their songs it all went to the same genre.
+
+Another limitation was the date range for our songs. Our artists cover a large time range except for pop which is mostly the 21st century. Because genre's change and reinvent themselves over time, it might make it more difficult to define the cluster. Pulling songs from the same year might make identfying genre easier.
+
 ## Conclusion
 
-In conclusion it appears that songs can, for the most, part be separated into genre just based on their lyrics. However, some genres are more similar that other genres. Some extra things that we could look at when trying to distinguish what genre music belongs to is length of song, number of words, key of the music, types of notes, and when the song was released. We believe that if we took some of these variables into account that we could get a much better accuaracy. 
+In conclusion it appears that songs can, for the most, be separated into genre just based on their lyrics. Rap was the only genre that was largely identifiable. However, some genres are more similar that other genres. Rock, rhythm and blues, and pop were the genres that had the most misclassification. 
+
+We feel that although lyrics is probably the most important feature, it likely isn't the only feature. Some extra variables that we could look at when trying to distinguish what genre music belongs to, is song length, word count, music key, number of featured artists, types of notes, and when the song was released. We believe that if we took some of these variables into account that we could get a much better accuaracy. 
