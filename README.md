@@ -108,6 +108,15 @@ When it comes to seeing which genres are easiest to predict, it is most helpful 
 
 ![ConfusionMatrix](Images/Confusion-Matrix.JPG)
 
+| Genre  | Accuracy |
+| ------------- | ------------- |
+| Country  | 0.637  |
+| Pop  | 0.044 |
+| Rap  | 0.948  |
+| Rhythm and Blues  | 0.505  |
+| Rock  | 0.803  |
+| Total  | 0.661  |
+
 The genre that was predicted with the greatest accuaracy was rap. However our model did especially poor at predicting pop. Rock was often cofused with Country, Pop, and Rythem and Blues. 
 
 When we turned to unsupervised method to determine how many genre there should be a kmeans clustering algorithm didn't produce a clear answer as can be seen below.
