@@ -108,7 +108,7 @@ When it comes to seeing which genres are easiest to predict, it is most helpful 
 
 ![ConfusionMatrix](Images/Confusion-Matrix.JPG)
 
-The genre that was predicted with the greatest accuaracy was rap. However our model did especially poor at predicting pop. Pop was most often mistaken for rhthym and blues and rock music.
+The genre that was predicted with the greatest accuaracy was rap. However our model did especially poor at predicting pop. Rock was often cofused with Country, Pop, and Rythem and Blues. 
 
 When we turned to unsupervised method to determine how many genre there should be a kmeans clustering algorithm didn't produce a clear answer as can be seen below.
 
